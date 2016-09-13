@@ -8,7 +8,7 @@ export default class Task extends Component{
     this.props.onDelete(task_id)
   }
 
-  taskComplete(e){
+  taskComplete(e,index){
     e.preventDefault()
     let task_id = this.refs.taskcomplete.id
     this.props.onComplete(task_id)
